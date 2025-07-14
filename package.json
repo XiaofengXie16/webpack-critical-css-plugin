@@ -1,5 +1,5 @@
 {
-    "name": "webpack-critical-css-plugin",
+    "name": "webpack-critical-css",
     "version": "1.0.0",
     "description": "A webpack 5 plugin that extracts and inlines critical CSS using the latest critical npm module",
     "main": "lib/index.js",
