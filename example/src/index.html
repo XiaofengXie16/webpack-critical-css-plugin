@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpack Critical CSS Plugin Example</title>
+    <meta name="description" content="Example demonstrating critical CSS extraction and inlining">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <h1 class="logo">Critical CSS Example</h1>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <h2 class="hero-title">Above the Fold Content</h2>
+            <p class="hero-description">
+                This content is visible immediately when the page loads and should have its CSS inlined for optimal
+                performance.
+            </p>
+            <button class="cta-button">Get Started</button>
+        </section>
+
+        <section class="features">
+            <h3>Key Features</h3>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>Fast Loading</h4>
+                    <p>Critical CSS is inlined for immediate rendering</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Performance Optimized</h4>
+                    <p>Non-critical CSS is loaded asynchronously</p>
+                </div>
+                <div class="feature-card">
+                    <h4>SEO Friendly</h4>
+                    <p>Improved Core Web Vitals scores</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Critical CSS Example. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#twitter">Twitter</a>
+            <a href="#github">GitHub</a>
+            <a href="#linkedin">LinkedIn</a>
+        </div>
+    </footer>
+
+    <!-- This content is below the fold and its CSS should be non-critical -->
+    <section class="below-fold-content">
+        <h3>Additional Content</h3>
+        <p>This content appears below the fold and doesn't need critical CSS treatment.</p>
+        <div class="large-content-section">
+            <div class="content-block">
+                <h4>Content Block 1</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="content-block">
+                <h4>Content Block 2</h4>
+                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
