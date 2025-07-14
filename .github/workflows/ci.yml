@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18, 20, 22]
+        node-version: [20, 22]
     
     steps:
       - uses: actions/checkout@v4
@@ -24,6 +24,8 @@ jobs:
       
       - name: Install dependencies
         run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_CI_TOKEN }}
       
       - name: Run tests
         run: npm test
@@ -44,6 +46,8 @@ jobs:
       
       - name: Install dependencies
         run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_CI_TOKEN }}
       
       - name: Run lint
         run: npm run lint
