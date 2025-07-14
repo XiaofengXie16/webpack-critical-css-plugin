@@ -16,7 +16,7 @@ A modern webpack 5 plugin that extracts and inlines critical CSS using the lates
 ## Installation
 
 ```bash
-npm install webpack-critical-css-plugin critical --save-dev
+npm install webpack-critical-css critical --save-dev
 ```
 
 **Note:** This plugin requires Node.js 14+ and webpack 5+. The `critical` package has a dependency on Puppeteer for running a headless browser, so make sure your build environment supports this.
@@ -24,7 +24,7 @@ npm install webpack-critical-css-plugin critical --save-dev
 ## Project Structure
 
 ```
-webpack-critical-css-plugin/
+webpack-critical-css/
 ├── lib/
 │   └── index.js              ← Main plugin code
 ├── example/
@@ -42,7 +42,7 @@ webpack-critical-css-plugin/
 ## Basic Usage
 
 ```javascript
-const WebpackCriticalCSSPlugin = require('webpack-critical-css-plugin');
+const WebpackCriticalCSSPlugin = require('webpack-critical-css');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
